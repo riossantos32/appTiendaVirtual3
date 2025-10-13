@@ -10,8 +10,8 @@ export default function Productos({ image, precio, descripcion, hora_mes, fondoC
       </View>
       <View style={styles.info}>
         <View style={styles.cora_pre}>
-        <Text style={styles.precio}>${precio}</Text>
-        <FontAwesome5 name={cora} size={20} color="#6f6f77ff"/>
+          <Text style={styles.precio}>${precio}</Text>
+          <FontAwesome5 name={cora} size={20} color="#6f6f77ff" />
         </View>
         <Text style={styles.descripcion}>{descripcion}</Text>
         <Text style={styles.mes_hora}>{hora_mes}</Text>
@@ -23,15 +23,15 @@ export default function Productos({ image, precio, descripcion, hora_mes, fondoC
 const styles = StyleSheet.create({
   tarjeta: {
     backgroundColor: "#ffffffff",
-    borderRadius: 10,
+    borderRadius: 16,
     height: 230,
-    borderWidth: 1,
-    borderColor: '#d6d3d3ff',
+    borderWidth: 2,
+    borderColor: '#e4e0e0ff',
   },
   contenedor_imagen: {
     borderTopLeftRadius: 10,
     borderTopRightRadius: 10,
-    width: 163,
+    width: 170,
     height: 128,
     marginBottom: 10,
     alignItems: "center",
@@ -39,7 +39,7 @@ const styles = StyleSheet.create({
     overflow: 'hidden',
   },
   imagen: {
-    width: '70%',
+    width: '100%',
     height: '100%',
   },
 
@@ -60,9 +60,9 @@ const styles = StyleSheet.create({
     fontSize: 11, fontFamily: "Merriweather",
     color: '#999',
   },
-  cora_pre:{
-flexDirection:"row",
-justifyContent:"space-between",
-marginRight:14,
+  cora_pre: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    marginRight: 14,
   }
 });
